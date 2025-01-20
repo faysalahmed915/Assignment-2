@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* shared styles */
+
+
+header{
+    font-family: "Quicksand", serif;
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    
+}
+
+
+/* nav styles start here  */
+
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11.5rem;
+    padding: 1.25rem 0;
+}
+
+.nav-home{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .75rem;
+}
+.home-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+    padding: 8px 0;
+}
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3A3A3A;
+
+}
+
+.btn-primary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 197px;
+    height: 50px;
+    padding: .5em 3em;
+    color: white;
+    background-color: #FEA301;
+    border: none;
+    border-radius: .75em;
+}
