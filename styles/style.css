@@ -65,7 +65,7 @@ img {
     align-items: center;
     /* gap: 11.5rem; */
     padding: 1.25rem 0;
-    border: 1px solid black;
+
 }
 
 .nav-home {
@@ -120,14 +120,11 @@ nav li a {
 
 .banner {
     display: flex;
-    flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: 1.2fr 1fr; */
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    /* gap: 3.125rem; */
-    border: 1px solid red;
+
 }
 
 .banner-content {
@@ -135,7 +132,6 @@ nav li a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 1px solid green;
 }
 
 .banner-content h2 {
@@ -148,7 +144,7 @@ nav li a {
     font-weight: 400;
 }
 
-.btn-primary {
+.btn-secondary {
     font-size: 1.25rem;
     font-weight: 700;
     width: 12.3125em;
@@ -162,7 +158,6 @@ nav li a {
 
 .banner-hero {
     max-width: 470px;
-    border: 1px solid #FEA301;
     justify-self: right;
 }
 
@@ -172,16 +167,18 @@ nav li a {
 /* main body style start here  */
 
 
+
+
 .card-container {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 2rem;
-    margin-top: 1.5rem;
-    /* justify-items: auto; */
+
+    justify-items: auto;
     justify-content: space-between;
-    margin: 2rem;
+
 }
 
 /* card-box style  */
@@ -260,14 +257,14 @@ nav li a {
 
 /* challenged button styles */
 
-.pre-next-icon {
+.prev-next-icon {
     display: flex;
     margin-bottom: 200px;
     justify-content: center;
     gap: 1rem;
 }
 
-.pre-next-icon button {
+.prev-next-icon button {
     font-family: "Quicksand", serif;
     font-size: 2rem;
     font-weight: 900;
@@ -290,13 +287,23 @@ html {
 }
 
 
+.stories {
+    justify-items: center;
+}
+
+.view-all,
+.section-title,
+.prev-next-icon {
+    margin: 5rem 0;
+}
+
 .story-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 200px; */
     gap: 1rem;
-
 }
+
+
 
 /* shared challenging styles for stories here  */
 
@@ -306,9 +313,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr .1fr .1fr 1fr;
-    /* border: 1px solid #8700FF; */
     gap: 0;
-    /* width: 100%; */
     border-radius: 1em;
 }
 
@@ -324,9 +329,7 @@ html {
 }
 
 .btn-challenge {
-    /* display: none; */
     z-index: 1;
-    /* width: 30%; */
     justify-self: center;
     align-self: center;
     font-size: .8rem;
@@ -337,9 +340,10 @@ html {
     border-radius: 3em;
 }
 
+/* card hero starts here  */
+
 .hero-story {
     grid-area: 3 / 1 / 5 / 3;
-    /* border: 1px solid #FEA301; */
     align-content: center;
     padding: 2.25rem;
     background-color: white;
@@ -350,12 +354,12 @@ html {
     gap: 2em;
 }
 
-/* card hero starts here  */
 
-.btn-hero{
+.btn-hero {
     grid-area: 2 / 1 / 4 / 2;
     background-color: #3CD8E8;
 }
+
 .card-hero-title {
     width: 70%;
     font-size: 1.5rem;
@@ -371,6 +375,7 @@ html {
 
 /* card hero here ends here  */
 
+
 /* card story section style */
 .card-story-container {
     display: grid;
@@ -381,10 +386,11 @@ html {
 }
 
 
-.btn-story{
+.btn-story {
     grid-area: 2 / 1 / 4 / 3;
     background-color: #95B226;
 }
+
 .card-story-description {
     font-size: 1rem;
     font-weight: 500;
@@ -395,9 +401,12 @@ html {
 
 
 
-.hide {
-    display: none;
-}
+
+
+/* ///// footer styles start here  */
+
+
+
 
 @media screen and (max-width: 576px) {
 
@@ -405,14 +414,14 @@ html {
         margin: 0;
     }
 
-    .banner {
+    /* .banner {
         flex-direction: column-reverse;
-    }
+    } */
 
     .home-title,
     header button,
     nav,
-    .pre-next-icon {
+    .prev-next-icon {
         display: none;
     }
 
@@ -428,7 +437,24 @@ html {
         padding: .75em 1em;
     }
 
-    /* @media screen and (max-width: 992px) {
+    .banner-hero {
+        max-width: 90%;
+        justify-self: center;
+    }
+.challenged-hide{
+    display: none;
+}
+    .story-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+
+
+}
+
+/* @media screen and (max-width: 992px) {
     
 }
 
