@@ -1,0 +1,24 @@
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: auto;
+}
+
+.card-container > div {
+    /* max-width: 100px; */
+    /* max-height: 200px; */
+    padding: 2em;
+    background-color: aqua;
+    /* display: grid; */
+    border: 1px solid red;
+    
+
+}
+
+.card-1 {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 100%;
+    height: 100%;
+}
