@@ -30,19 +30,22 @@
 
 
 header,
-main {
+main, footer {
     font-family: "Quicksand", serif;
-
-    width: 90vw;
-    margin-inline: auto;
-
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
+}
+footer{
+    background-color: #01ACFD;
+    padding-top: 7.5rem;
+    padding-bottom: 10.5rem;
 }
 
+main {
+    
+    background-image: url("bg.png"), linear-gradient(white, white, rgba(254, 163, 1, .3));
+
+}
 
 
 img {
@@ -55,6 +58,7 @@ img {
     font-size: 2.875rem;
     font-weight: 700;
     justify-self: center;
+    text-align: center;
 }
 
 /* nav styles start here  */
@@ -63,7 +67,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 11.5rem; */
+    gap: 2rem;
     padding: 1.25rem 0;
 
 }
@@ -98,7 +102,15 @@ a {
 nav li a {
     font-size: 1.25rem;
     font-weight: 500;
-    color: red;
+
+}
+
+.facilities {
+    color: #05D4DF;
+}
+
+.admission {
+    columns: #5D58EF;
 }
 
 .btn-primary {
@@ -139,6 +151,14 @@ nav li a {
 .banner-content h2 {
     font-size: 3.5rem;
     font-weight: 700;
+}
+
+.orange {
+    color: #FEA301;
+}
+
+.sky-blue {
+    color: #01ACFD;
 }
 
 .banner-content p {
@@ -283,9 +303,7 @@ nav li a {
 /* ////// */
 /* story section style starts here  */
 
-html {
-    background-color: #FFF4DC;
-}
+
 
 
 .stories {
@@ -411,9 +429,6 @@ html {
 footer section {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-
-
-    background-color: #01ACFD;
     color: white;
 }
 
@@ -472,9 +487,21 @@ footer section h6 {
 
 /* media query starts here  */
 
+
+
 @media screen and (max-width: 576px) {
 
-
+    header,
+    main, footer {
+        font-family: "Quicksand", serif;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    footer{
+        background-color: #01ACFD;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
     .home-title,
     header button,
     nav,
@@ -489,10 +516,10 @@ footer section h6 {
     }
 
     .nav-section {
-        justify-self: space-between;
+        justify-content: space-between;
         border: 1px solid #FEA301;
         gap: 11.5rem;
-        padding: .75em 1em;
+        padding: .75em 0em;
     }
 
     .banner {
@@ -522,17 +549,52 @@ footer section h6 {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .section-3 {
         justify-items: left;
     }
-    
+
 
 }
 
-/* @media screen and (max-width: 992px) {
-    
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    header button,
+    nav,
+    .prev-next-icon {
+        display: none;
+    }
+
+
+    .nav-icon {
+        display: contents;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .nav-section {
+        justify-content: space-around;
+        border: 1px solid #FEA301;
+        gap: 11.5rem;
+        padding: .75em 1em;
+    }
+
+
 }
 
-@media screen and (max-width: 1200px) {
-    
-} */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .nav-section {
+        gap: 3rem;
+    }
+
+    .navbar {
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+
+}
