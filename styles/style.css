@@ -419,7 +419,15 @@ nav li a {
 }
 
 
+/* marquee section  */
 
+marquee {
+    font-family: "Quicksand", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #8700FF;
+    margin: 2em;
+}
 
 
 /* ///// footer styles start here  */
@@ -484,7 +492,9 @@ footer section h6 {
 }
 
 
-
+hr {
+    display: none;
+}
 /* media query starts here  */
 
 /* for 576px  */
@@ -514,10 +524,14 @@ footer section h6 {
         height: 2rem;
         width: 2rem;
     }
-
+hr {
+    display: block;
+    color: orange;
+    width: 100%;
+}
     .nav-section {
         justify-content: space-between;
-        border: 1px solid #FEA301;
+        
         gap: 11.5rem;
         padding: .75em 0em;
     }
@@ -564,13 +578,13 @@ footer section h6 {
     header,
     main, footer {
         font-family: "Quicksand", serif;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     footer{
         background-color: #01ACFD;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     
     
