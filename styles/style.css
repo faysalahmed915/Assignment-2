@@ -28,6 +28,10 @@
     margin: 0;
 }
 
+body {
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+
 
 header,
 main, footer {
@@ -40,13 +44,9 @@ footer{
     padding-top: 7.5rem;
     padding-bottom: 10.5rem;
 }
-
 main {
-    
-    background-image: url("bg.png"), linear-gradient(white, white, rgba(254, 163, 1, .3));
-
+    background-image: url(bg.png);
 }
-
 
 img {
     max-width: 100%;
@@ -487,7 +487,7 @@ footer section h6 {
 
 /* media query starts here  */
 
-
+/* for 576px  */
 
 @media screen and (max-width: 576px) {
 
@@ -557,8 +557,25 @@ footer section h6 {
 
 }
 
+/* for 576px to 992 px  */
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
+    header,
+    main, footer {
+        font-family: "Quicksand", serif;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    footer{
+        background-color: #01ACFD;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    
+    
+    
     header button,
     nav,
     .prev-next-icon {
@@ -582,6 +599,7 @@ footer section h6 {
 
 }
 
+/* for 992px to 1200 px  */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
     .nav-section {
